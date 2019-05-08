@@ -1,5 +1,5 @@
 # Use the following JavaScript in Storyline
-##Download the JavaScript files in this repository to place in your published folder. You will need to edit the LRS details in the xapi.js file.
+## Download the JavaScript files in this repository to place in your published folder. You will need to edit the LRS details in the xapi.js file.
 
 // Script that appends scripts to body of Storyline file
 
