@@ -22,7 +22,9 @@ sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http:/
 
 ```
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script><script type="text/javascript" src="xapiwrapper.min.js"></script><script src="xapi.js"></script>
-    
+
+<script>
+
 function pageAccessed() {
   setTimeout(function() {
     var page = window.location.href;
@@ -35,4 +37,5 @@ function pageAccessed() {
 
 window.addEventListener('load', pageAccessed, false);
 window.addEventListener('hashchange', pageAccessed, false);
+</script>
 ```
