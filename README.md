@@ -17,10 +17,12 @@ sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http:/
 ```
 
 # Use the following JavaScript in the published Rise index.html file
-## Download the JavaScript files in this repository to place in your published folder. You will need to edit the LRS details in the xapi.js file.
+## Download the JavaScript files in this repository to place in your published folder at the end before the closing body tag. You will need to edit the LRS details in the xapi.js file.
 
 
 ```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script><script type="text/javascript" src="xapiwrapper.min.js"></script><script src="xapi.js"></script>
+    
 function pageAccessed() {
   setTimeout(function() {
     var page = window.location.href;
