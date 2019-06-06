@@ -19,7 +19,8 @@ sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http:/
 ## Download the JavaScript files in this repository to place in your published folder. You will need to edit the LRS details in the xapi.js file.
 
 
-```var page = window.location.href;
+```
+var page = window.location.href;
 
 function pageAccessed() {
   setTimeout(function() {
