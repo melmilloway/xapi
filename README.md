@@ -21,16 +21,15 @@ sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http:/
 
 
 ```
-var page = window.location.href;
-
 function pageAccessed() {
   setTimeout(function() {
-    if (document.URL.indexOf("PUT YOUR PAGE URL HERE") === 0) {
+    var page = window.location.href;
+      if (document.URL.indexOf("PUT YOUR PAGE URL HERE") === 0) {
 
-      sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Some page','in Rise Course');
-    }
-  }, 1000);
-}
+        sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Some page','in Rise Course');
+      }
+    }, 1000);
+  }
 
 window.addEventListener('load', pageAccessed, false);
 window.addEventListener('hashchange', pageAccessed, false);
