@@ -23,7 +23,7 @@ sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http:/
 
 function pageAccessed() {
   setTimeout(function() {
-    if (document.URL.indexOf("") === 0) {
+    if (document.URL.indexOf("PUT YOUR PAGE URL HERE") === 0) {
 
       sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Some page','in Rise Course');
     }
