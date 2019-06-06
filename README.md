@@ -12,7 +12,8 @@ $('body').append(appendBody);
 
 // Statement function without results field
 
-sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http://example.com/activity-id','main page','in accordion example');```
+sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http://example.com/activity-id','main page','in accordion example');
+```
 
 # Use the following JavaScript in the published Rise index.html file
 ## Download the JavaScript files in this repository to place in your published folder. You will need to edit the LRS details in the xapi.js file.
@@ -30,4 +31,5 @@ function pageAccessed() {
 }
 
 window.addEventListener('load', pageAccessed, false);
-window.addEventListener('hashchange', pageAccessed, false);```
+window.addEventListener('hashchange', pageAccessed, false);
+```
