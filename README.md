@@ -37,5 +37,6 @@ function pageAccessed() {
 
 window.addEventListener('load', pageAccessed, false);
 window.addEventListener('hashchange', pageAccessed, false);
+
 </script>
 ```
