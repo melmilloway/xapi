@@ -40,3 +40,50 @@ window.addEventListener('hashchange', pageAccessed, false);
 
 </script>
 ```
+# Rise with page views and clicks
+
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+    <script type="text/javascript" src="xapiwrapper.min.js"></script>
+    <script src="xapi.js"></script>
+
+<script>
+
+function pageAccessed() {
+  setTimeout(function() {
+    var page = window.location.href;
+
+    if (document.URL.indexOf("file:///Users/melmilloway/Downloads/content%202/index.html#/lessons/eJYEbm47NRI7ssEt0-8H37JuGAhNucR7") === 0) {
+
+      sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Gauging your wellness','in Rise Course');
+    }
+    if (document.URL.indexOf("file:///Users/melmilloway/Downloads/content%202/index.html#/lessons/vU7NQN213PGdtrGm2Av33tlrnDKsjBGW") === 0) {
+
+      sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Stretching for success','in Rise Course');
+    }
+    if (document.URL.indexOf("file:///Users/melmilloway/Downloads/content%202/index.html#/lessons/Ku-ycYECZJkJJnUGgrfBl9yO43EPIqo6") === 0) {
+
+      sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Stress','in Rise Course');
+       clickHandler('.blocks-tabs__header-item', page, 'tab');
+    }
+  }, 1000);
+}
+
+function clickHandler(itemClassName, page, pageName) {
+  var $items = $(itemClassName);
+  $items.each(function(i) {
+    var num = i + 1;
+    $(this).attr('data-name', pageName + '-' + num);
+    $(this).on('click', function() {
+      var dataAttr = $(this).attr('data-name');
+      sendStatement('http://adlnet.gov/expapi/verbs/experienced', 'experienced', page + '?' + dataAttr, dataAttr, 'in Rise Course');
+    });
+  });
+}
+
+window.addEventListener('load', pageAccessed, false);
+window.addEventListener('hashchange', pageAccessed, false);
+
+</script>
+```
