@@ -16,7 +16,7 @@ $('body').append(appendBody);
 sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced','http://example.com/activity-id','main page','in accordion example');
 ```
 
-# Use the following JavaScript in the published Rise index.html file
+# Page views in Rise - Use the following JavaScript in the published Rise index.html file
 ## Download the JavaScript files in this repository to place in your published folder at the end before the closing body tag. You will need to edit the LRS details in the xapi.js file.
 
 
@@ -40,7 +40,8 @@ window.addEventListener('hashchange', pageAccessed, false);
 
 </script>
 ```
-# Rise with page views and clicks
+# Rise with page views and clicks - Use the following JavaScript in the published Rise index.html file
+## Download the JavaScript files in this repository to place in your published folder at the end before the closing body tag. You will need to edit the LRS details in the xapi.js file.
 
 ```
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -54,18 +55,18 @@ function pageAccessed() {
   setTimeout(function() {
     var page = window.location.href;
 
-    if (document.URL.indexOf("file:///Users/melmilloway/Downloads/content%202/index.html#/lessons/eJYEbm47NRI7ssEt0-8H37JuGAhNucR7") === 0) {
+    if (document.URL.indexOf("PUT YOUR PAGE URL HERE") === 0) {
 
       sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Gauging your wellness','in Rise Course');
     }
-    if (document.URL.indexOf("file:///Users/melmilloway/Downloads/content%202/index.html#/lessons/vU7NQN213PGdtrGm2Av33tlrnDKsjBGW") === 0) {
+    if (document.URL.indexOf("PUT YOUR PAGE URL HERE") === 0) {
 
       sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Stretching for success','in Rise Course');
     }
-    if (document.URL.indexOf("file:///Users/melmilloway/Downloads/content%202/index.html#/lessons/Ku-ycYECZJkJJnUGgrfBl9yO43EPIqo6") === 0) {
+    if (document.URL.indexOf("PUT YOUR PAGE URL HERE") === 0) {
 
       sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Stress','in Rise Course');
-       clickHandler('.blocks-tabs__header-item', page, 'tab');
+       clickHandler('.blocks-tabs__header-item', page, 'tab');  // Tracking click on tabbed components
     }
   }, 1000);
 }
