@@ -67,6 +67,7 @@ function pageAccessed() {
 
       sendStatement('http://adlnet.gov/expapi/verbs/experienced','experienced',page,'Stress','in Rise Course');
        clickHandler('.blocks-tabs__header-item', page, 'tab');  // Tracking click on tabbed components
+       clickHandler('.blocks-accordion__item', page, 'accordion');  // Tracking click on accordion components
     }
   }, 1000);
 }
